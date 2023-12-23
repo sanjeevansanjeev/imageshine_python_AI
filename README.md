@@ -1,4 +1,4 @@
-# imageshine_python_AI
+# python_AI
 import cv2.py #library import
 img=cv2.imread("python logo sample") #read an image
 grayImg=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY) #color to gray imgae
