@@ -1,0 +1,17 @@
+import speech_recognition as sr
+import webbrowser
+from gtts import gTTS
+
+sanjeev=sr.Recognizer()
+with sr.Microphone() as source:
+    print ("Jarvis : Say Your Command Sir !" )
+    audio=sanjeev.listen(source)
+try:
+        command=sanjeev.recognize_google(audio)
+        print("sanjeev said :",format(command))
+        webbrowser.open_new_tab('https://www.google.com/search?q='+command)
+        webbrowser.open_new_tab('https://www.youtube.com/watch?v='+command)
+except:
+            print('Jarvis : sooey sir')
+        
+        
